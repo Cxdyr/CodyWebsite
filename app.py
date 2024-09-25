@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, session, flash
+from flask import Flask, render_template, redirect, url_for, request, session, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 import os, json, random # type: ignore
@@ -8,8 +8,12 @@ load_dotenv('key.env')
 
 app = Flask(__name__)
 
+# Use the SECRET_KEY from the environment, or a default if not set
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI', 'sqlite:///users.db')
+
+# Use the DATABASE_URL provided by Heroku, or fall back to SQLite for local development
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///users.db')
+
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
@@ -162,6 +166,21 @@ def dashboard():
 
     users = User.query.all()
     return render_template('dashboard.html', users=users)
+
+@app.route('/update-coins', methods=['POST'])
+def update_coins():
+    if 'user_id' not in session:
+        return jsonify({"error": "Unauthroized"}), 404
+    
+    data = request.get_json()
+    winnings = data.get('winnings',0)
+
+    user = User.query.get(session['user_id'])
+    if user:
+        user.coins+= winnings
+        db.session.commit()
+
+    return jsonify({"success": True, "new_coins": user.coins})
 
 @app.route('/dice', methods=['GET', 'POST'])
 def dice():
