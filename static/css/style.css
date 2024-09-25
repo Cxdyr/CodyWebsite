@@ -1,0 +1,395 @@
+/* General body styling */
+body {
+    font-family: 'Arial';
+    background-color: #d8caca;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Title styling */
+h1 {
+    color: #fff;
+    background-color: rgb(31, 30, 29);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+/* General link box styling */
+.link-box {
+    background-color: rgb(5, 227, 243);
+    color: #000000;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link-box2 {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Small text container styling */
+.small-text {
+    background-color: rgb(16, 16, 17);
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 14px;
+}
+/* Smaller button styling */
+.small-button {
+    width: 100px; 
+    padding: 8px; 
+    font-size: 14px; 
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+    margin: 5px; 
+    display: inline-block; 
+}
+
+.small-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Small text container styling */
+.small-text-white {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 10px; /* Adjust this value to move down */
+    left: 20px; /* Adjust this value to move right */
+    display: inline-block;
+    z-index: 1000;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown THIS CSS STYLING IS FROM CHATGPT */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+
+
+/* Form container styling */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button container to center the button */
+.button-container {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: rgb(100, 100, 100);
+    cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Resume container styling */
+#resume-container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Ensure iframe fills the container */
+iframe {
+    width: 100%; 
+    height: 800px; 
+    border: none; 
+}
+
+/* Profile container to position the profile picture */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.profile-picture {
+    width: 250px;
+    height: auto;
+    border-radius: 45%;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    transition: filter 0.3s ease;
+}
+
+/* Hover effect to turn the picture slightly grey */
+.profile-picture:hover {
+    filter: brightness(90%); 
+    cursor: pointer; 
+}
+
+/* CSS for smaller iframes on project pages */
+.project-iframe {
+    width: 488.8888px;  /* Standard width for embedded videos */
+    height: 275px; /* Standard height for embedded videos */
+    border: none;  /* Remove any borders */
+    display: block; /* Ensure the iframe is a block element */
+    margin: 0 auto; /* Center the iframe */
+}
+
+
+/* Text container styling */
+.text-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.leaderboard {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.leaderboard h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaderboard li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Skills list styling */
+.skills-list {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #000;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .skills-list {
+        font-size: 1em;
+    }
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Dice image styling */
+.dice-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px;
+    height: auto;
+}
+
+/* Card container styling */
+.card-container img {
+    height: 214.5px !important;
+    width: 150px !important;
+    margin: 7px;
+}
+
+#dealer-cards, #your-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+a h1 {
+    color: #fff; /* Keep the header text white */
+    background-color: rgb(31, 30, 29); 
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+
+a h1:hover {
+    color: #ccc; /* Optional: Change color on hover */
+}
+
+/* Ensure the anchor itself does not interfere */
+a {
+    text-decoration: none; 
+    display: block; 
+    width: 100%; 
+}
+
+a:hover {
+    color: #0056b3;
+}

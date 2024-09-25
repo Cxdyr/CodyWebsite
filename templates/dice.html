@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"> <h1>Dice Game</h1> </a>
+    <div class="small-text">
+        <b>You have <span id="user-coins">{{ user.coins }}</span> coins.</b>
+    </div>
+
+    <form id="dice-form" action="{{ url_for('dice') }}" method="post">
+        <label for="bet_amount">Bet Amount:</label>
+        <input type="number" name="bet_amount" id="bet_amount" min="1" required>
+
+        <label for="bet_type">Bet On:</label>
+        <select name="bet_type" id="bet_type" required>
+            <option value="even">Even</option>
+            <option value="odd">Odd</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <button type="submit" id="roll-dice-button" class="small-button">Roll the Dice</button>
+
+    </form>
+
+    <div class="small-text">
+        {% if get_flashed_messages() %}
+            <b>{{ get_flashed_messages()[0] }}</b>
+        {% endif %}
+    </div>
+
+    {% if dice_image %}
+        <img src="{{ url_for('static', filename=dice_image) }}" alt="Rolled Dice" class="dice-image">
+    {% endif %}
+
+    <a href="{{ url_for('casino') }}" class="link-box">Back to Casino</a>
+
+    <script>
+        const userCoins = parseInt(document.getElementById("user-coins").innerText);
+
+        document.getElementById("dice-form").addEventListener("submit", function(event) {
+            const betAmount = parseInt(document.getElementById("bet_amount").value);
+            if (betAmount > userCoins) {
+                event.preventDefault(); // Stop form submission
+                alert("You don't have enough coins to place this bet.");
+            }
+        });
+    </script>
+</body>
+</html>

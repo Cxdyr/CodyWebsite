@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{ url_for('index') }}">
+        <h1>Blackjack</h1>
+    </a>
+    <div class="small-text">
+        <b>You have <span id="user-coins">{{ user.coins }}</span> coins.</b>
+    </div>
+    
+    <h2>Dealer: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards" class="card-container">
+        <img id="hidden" src="{{ url_for('static', filename='images/cards/BACK.png') }}">
+    </div>
+    <h2>You: <span id="your-sum"></span></h2>
+    <div id="your-cards" class="card-container"></div>
+    
+    <div id="bet-section">
+        <input type="number" id="bet-amount" min="1" value="1">
+        <button id="place-bet" class="small-button">Place Bet</button>
+    </div>
+
+    <div id="game-section" style="display:none;">
+        <button id="hit" class="small-button">Hit</button>
+        <button id="stay" class="small-button">Stay</button>
+    </div>
+
+    <p id="results"></p>
+    <button id="play-again" class="small-button" style="display:none;">Play Again</button>
+
+    <script>
+        const cardImageBaseUrl = "{{ url_for('static', filename='images/cards/') }}";
+        const userCoins = parseInt(document.getElementById("user-coins").innerText);
+    </script>
+    <script src="{{ url_for('static', filename='js/blackjack.js') }}"></script>
+
+    <a href="{{url_for('casino')}}" class="link-box">Back to Casino</a>
+</body>
+</html>

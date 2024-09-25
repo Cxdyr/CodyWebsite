@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project['title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"> <h1>{{ project['title'] }}</h1> </a>
+
+    <h2>Project Page / Video</h2>
+    <iframe class="project-iframe" src="{{ project['url'] }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    <div class="text-container">
+        <p><strong>Description:</strong> {{ project['description'] }}</p>
+        <p><strong>Details:</strong> {{ project['details'] }}</p>
+    </div>
+
+    <a href="{{ project['gitpage'] }}" target="_blank" class="link-box">GitHub Page</a>
+    <a href="{{ project['url'] }}" target="_blank" class="link-box">Redirect URL</a>
+    <a href="{{ url_for('projects_page') }}" class="link-box2">Back to Projects</a>
+</body>
+</html>

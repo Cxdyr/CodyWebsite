@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"> <h1>My Projects</h1> </a>
+    <a href="{{url_for('project', project_id=1)}}" class ="link-box"> FlixPicks</a>
+    <a href="{{url_for('project', project_id=2)}}" class="link-box">Hermorrhagic Smallpox Simulator</a>
+    <a href="{{url_for('project', project_id=3)}}" class="link-box">Card Factory </a>
+    <a href="{{url_for('project', project_id=4)}}" class="link-box">Cody Chatbot </a>
+    <a href="{{url_for('project', project_id=5)}}" class="link-box">Snake Game </a>
+    <a href="{{url_for('project', project_id=6)}}" class="link-box">Intergalactic Travel Simulator </a>
+    <a href="{{url_for('project', project_id=7)}}" class="link-box">Cody Rabie Portfolio Website </a>
+    
+    <a href="{{ url_for('index') }}" class="link-box2"> Home</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Rabie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"><h1>Cody Rabie</h1> </a>
+    <main>
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('aboutme') }}">About Me</a>
+                <a href="{{ url_for('projects_page') }}">My Projects</a>
+                <a href="{{ url_for('skills') }}">Skills</a>
+                <a href="{{ url_for('resume') }}">Resume</a>
+                <a href="https://www.linkedin.com/in/cody-rabie-838aa0205" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Cxdyr" target="_blank">GitHub</a>
+                <a href="{{ url_for('casino') }}">Cody's Casino</a>
+                <a href="mailto:codyrabie1@gmail.com">Contact Me</a>
+            </div>
+        </div>
+        
+        
+        <a href="{{url_for('aboutme')}}">
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-picture">
+        </div> </a>
+        
+        <div class="small-text-white">
+            <p> My name is Cody Rabie, welcome to my website. <br>
+                Feel free to explore and check out my projects, skills, important links, and casino! </p>
+        </div>
+        <div class="small-text"> <b> My Expertise </b></div>
+    
+        <a href="{{url_for('projects_page')}}" target="_blank" class="link-box">My Projects</a>
+        <a href="{{url_for('skills')}}" target="_blank" class="link-box">Skills</a>
+
+        <div class="small-text">
+            <b>My Links:</b>
+        </div>
+        <div class="link-container">
+            <a href="{{ url_for('resume') }}" target="_blank" class="link-box">Resume</a>
+            <a href="https://www.linkedin.com/in/cody-rabie-838aa0205" target="_blank" class="link-box">LinkedIn</a>
+            <a href="https://github.com/Cxdyr" target="_blank" class="link-box">GitHub</a>
+            <a href="{{url_for('casino')}}" target="_blank" class="link-box"> Cody's Casino</a>
+        </div>
+        </main>
+        </body>
+     </html>

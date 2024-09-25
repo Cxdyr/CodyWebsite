@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"> <h1>Welcome to Cody's Casino, {{ user.username }}!</h1> </a>
+    
+    <!-- Leaderboard Section -->
+    <div class="leaderboard">
+        <h2>Top 5 Coin Leaders</h2>
+        <ol>
+            {% for leader in leaderboard %}
+                <li>{{ leader.username }} - {{ leader.coins }} coins</li>
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="small-text">
+        <b>You have {{ user.coins }} coins.</b>
+    </div>
+
+    <!-- Casino games here -->
+    <a href="{{ url_for('dice')}}" class="link-box"> Dice</a>
+    <a href="{{ url_for('blackjack')}}" class="link-box"> Blackjack</a>
+    <a href="#" id="out-of-coins" class="link-box" onclick="redirectToGitHub()">Out of Coins?</a>
+
+    <a href="{{ url_for('logout') }}" class="link-box">Logout</a>
+    <a href="{{ url_for('index')}}" class="link-box"> Home</a>
+
+    <script>
+    function redirectToGitHub() {
+        if (confirm("Follow the developer's GitHub to support me! It will also refill 1000 coins.")) {
+            // Redirect to GitHub
+            window.open("https://github.com/Cxdyr", "_blank");
+            window.location.href = "/casino?add_coins=true";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favi.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <a href="{{url_for('index')}}"><h1>About Me</h1></a>
+    
+    <div class="text-container">
+        <h2>About myself...</h2>
+        <p class="skills-list">
+            My name is Cody Rabie, I am a Computer Science student at Old Dominion University, with a passion for software engineering and web/application design. 
+            Over the course of my academics, I have sharpened my skills, using languages like C++, Java, Python, JavaScript, HTML, and CSS to create user-friendly and responsive web applications. 
+            With a foundation in data structures, algorithms, and object-oriented programming, I am eager to contribute to innovative projects that push the boundaries of technology and enhance user experiences. 
+            My goal is to continually grow as a software engineer, exploring new challenges and technologies. Some of my interests outside of programming and software development are MMA, video games, and lifting weights. 
+            I train Muay Thai on my free time and like to stay up to date with pretty much every sport you could think of. Thank you for taking the time to read about me! If you are interested in telling me about you or reaching out for work related inquires shoot me an email at: <strong> codyrabie1@gmail.com.</strong>
+    </div>
+    
+    <a href="{{ url_for('index') }}" class="link-box">Home</a>
+</body>
+</html>

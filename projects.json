@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1",
+        "title": "FlixPicks Web Application",
+        "description": "FlixPicks was an application created to eliminate user indecision and streaming fatigue when selecting content to view on streaming services.",
+        "details": "I was the front-end dev and team-lead for this project alongside a team of 7 computer science undergrad students at Old Dominion University.",
+        "url": "https://www.cs.odu.edu/~cpi/old/410/orangf23/index.html",
+        "gitpage":"https://github.com/FlixPicks-Orange"
+    },
+    {
+        "id": "2",
+        "title": "Hermorrhagic Smallpox Simulator C++",
+        "description": "This program was based on works from Epstein and co, it simulates the spread of hemorrhagic smallpox through an interconnected population.",
+        "details": "I developed this program during my time in my structures and algorithms class at Old Dominion University.",
+        "url":"https://www.youtube.com/embed/-S6rbdFJsM4?si=Eeb_lgNOrRSVRaYh",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/Hemorrhagic-Smallpox-Simulation"
+    },
+    {
+        "id": "3",
+        "title": "Card Factory C++",
+        "description": "This program simulates a card factory that creates random number of card objects in 1 stack per day (user simulation time), these stacks of cards are sorted by rarity type in the factory list. These cards are then sent to the store and sold to customers, the entire process is tracked through different data structures and output at the end of program. ",
+        "details": "This is a simple program I worked on to demonstrate an understanding of data strucures in C++, using multiple nested lists of different objects.",
+        "url":"https://www.youtube.com/embed/-S6rbdFJsM4?si=Eeb_lgNOrRSVRaYh",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/CardFactory"
+    },
+    {
+        "id": "4",
+        "title":"Cody ChatBot Python",
+        "description": "This program is a simple chatbot that answers certain questions with predefined answers about myself. The program uses blenderbot to answer on recognized questions and fuzzywuzzy to recognize known questions with slightly differed syntax from the user. ",
+        "details": "This is a program I developed while learning basic fundamentals about chatbots and machine learning (althought this program does not use ML), it is a cool basic implementation of a chatbot similiar to customer support chatbots.",
+        "url":"https://www.youtube.com/embed/HzbA7lZS8HI?si=TCXnoHS8HHsTGW9d",
+        "gitpage":"https://github.com/Cxdyr/CodyChatBOT"
+    },
+    {
+        "id": "5",
+        "title":"Snake Game Python",
+        "description": "This program is the classic snake game, made in python. The user controls a snake that eats food items randomly placed on the window and the game ends if the user hits a border or their own tail. ",
+        "details": "This is a simple program I made over the summer in a couple hours, it is one of the most basic games to create but demonstrates an understanding of tkinter python library and concepts.",
+        "url":"https://www.youtube.com/embed/rzeUH3K_L84?si=9opVXd2k5vdO8U9C",
+        "gitpage":"https://github.com/Cxdyr/SnakeGame"
+    },
+    {
+        "id": "6",
+        "title":"Intergalactic C++ Game",
+        "description": "This is a program that simulates a crew on a space-ship traveling out of our galaxy in a time-loop. You get to choose the amount of crew members in your ship, then must keep your crew healthy and happy while traversing out of the solar system. The program uses a list of crew member objects each with health, hunger, and happiness. A ship object with health, fuel, and food ct. Each time step the crew hunger and happiness goes down and certain options can be choose by the user to grow crops, watch movies (boost happiness of an amount of members), incubate fuel, repair the ship, feed the crew, or view planets that have been past. Each time step the ship travels a random distance out of the solar system and each planet that is encountered is added the the past planet list. Once out of our solar system random generated planets are encountered with their own unique object information.",
+        "details": "This was a passion program I made in C++ a few years ago while being very interesting in astronomy, it is functional and I intend on making a python version of this program with actual graphics to match the logic.",
+        "url":"https://www.youtube.com/embed/icSCXwH2Has?si=ApibpyiixsqF0-GQ",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/Intergalactic"
+    },
+    {
+        "id": "7",
+        "title": "Cody Rabie Portfolio Website",
+        "description":"This is my personal portfolio website that you are currently browsing, It uses a basic database for the casino with a secret back-end admin interface and implements web design practices for the code on the front-end.",
+        "details":"I created this to showcase my skills and projects through a project that shows my skills. It took me about 2-3 days total including changes and other, but the project is basic and showcases fundamentals of web design and some slightly more complex coding practices.",
+        "url":"https://www.youtube.com/embed/xhhwPQi5zeI?si=4A0eudNOC9Eh1d6y",
+        "gitpage": "https://github.com/Cxdyr/CodyRabie_Website"
+    }
+
+
+]
+

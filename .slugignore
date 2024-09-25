@@ -1,0 +1,16 @@
+*.pyc
+__pycache__/
+.env
+*.sqlite3
+*.torch
+*.csv
+*.xlsx
+*.gif
+venv/
+node_modules/
+tests/
+docs/
+# Exclude torch and associated large packages
+torch/
+nvidia-*.whl
+
