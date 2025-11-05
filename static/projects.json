@@ -1,0 +1,85 @@
+[
+    {
+        "id": "1",
+        "title": "FlixPicks Web Application - 2024",
+        "description": "FlixPicks is a web application created to eliminate user indecision and streaming fatigue when selecting content to view on streaming services. My team created our own back-end API that was populated with movie and content information using the TMDB public API. Our front-end populated movie information with custom made API calls to our back-end, user's are recommended content when logged in with our apriori algorithim and are provided general trending movies in the HotPicks content. ",
+        "details": "I was the front-end developer and team-lead for this project alongside a team of 7 computer science undergrad students at Old Dominion University. My work consisted of connecting the front-end with calls to our API gateway to populate HotPicks, set up user settings such as change password, choose streaming services, and other features. I was also tasked with managing team meetings, team member tasks, and kanban board progress. The GitHub page show cases all of our work and the embedded webpage is our feasability webpage featuring relevant documents to the devlopment of FlixPicks. We used virtualization through docker to host our backend recommendation apriori algorithim and database information simultaneously with our frontend, the project was our capstone two semester final project at ODU. ",
+        "url": "https://www.cs.odu.edu/~cpi/old/410/orangf23/index.html",
+        "gitpage":"https://github.com/FlixPicks-Orange"
+    },
+    {
+        "id": "2",
+        "title": "Songwall Rating Webapp - 2025",
+        "description": "Songwall is a web application that I created as a social media/music rating app. I integrate the spotify web api using the search endpoint to get song metadata - which is then stored in my database. Songwall allows users to to find/view songs and rate/post about them. It uses a relational database allowing easy search/rating/posting about songs and linking them to user profiles. My database stores song information, view information, rating information about each song, and uses this information to better present songs and recommendations to users. ",
+        "details": "Songwall is created using Flask and SQLAlchemy for the back-end, I am the creator and full-stack developer of this app. It demonstrates my understanding of full-stack, database managment, and creating an easy-to-use user UI/UX. I also use a content/collaborative/popularity based filtering algorithim paired with user social interactions to recommend new songs to users as they use the application.  ",
+        "url": "https://www.Songwall.org",
+        "gitpage": "https://github.com/Cxdyr/SongWall"
+    },
+    {
+        "id": "3",
+        "title": "Fitness Friend - 2025",
+        "description": "This is a comprehensive fitness tracker web application created for mobile or desktop that integrates front-end and back-end components to deliver a user-friendly experience. Using the Flask framework, I designed and developed a RESTful API for functionality that is connected to a front-end that handles user input and rendering templates and information. It features an interactive and intuitive interface that connects with my custom-built API for functionality. I also modeled and implemented a relational database that is implemented to securely store and manage user data, track progress, create plans, and ensure scalability.",
+        "details":"This project shows my understanding of full-stack development, database managment, and leveraging machine learning to enhance the user experience. On my GitHub README.md I feature the feasability documents and detailed commit history. This project is still being enhanced and I am currently developing system tests and adding improvements. ",
+        "url":"https://www.youtube.com/embed/t-67vfBuXDM?si=_P5nTntQw29jgcWP",
+        "gitpage":"https://github.com/Cxdyr/Fitness-Tracker"
+    },
+    {
+        "id": "4",
+        "title": "Card Factory C++ - 2023",
+        "description": "Card Factory simulates a card factory that creates random number of card objects in 1 stack per day (user simulation time), these stacks of cards are sorted by rarity type in the factory list. These cards are then sent to the store and sold to customers, the entire process is tracked through different data structures and output at the end of process. ",
+        "details": "I developed this program out of pure enjoyment when I was learning about data structures and algorithms.",
+        "url":"https://www.youtube.com/embed/dZ6GAw4l4lM?si=5D1BlcCGNN8K7rpN",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/CardFactory"
+    },
+    {
+        "id": "5",
+        "title":"Cody ChatBot Python - 2024",
+        "description": "Cody ChatBot is a simple chatbot that answers certain questions with predefined answers about myself. CodyBot combines pre-programmed responses with the conversational capabilities that BlenderBot provides (a transformer-based AI model from facebook for conversations). Using personal data stored in a JSON file and natural language understanding it responds to user queries, utilizing fuzzywuzzy to understand varrying syntax, and differing to Blenderbot if an unrecognized query is recognized. ",
+        "details": "This is a program I developed while learning basic fundamentals about chatbots and machine learning (although this program does not use any ML - just tokenizes the users query to blenderbot if unrecognized input is provided), it is a cool basic implementation of a chatbot similiar to customer support chatbots.",
+        "url":"https://www.youtube.com/embed/HzbA7lZS8HI?si=TCXnoHS8HHsTGW9d",
+        "gitpage":"https://github.com/Cxdyr/CodyChatBOT"
+    },
+    {
+        "id": "6",
+        "title":"Snake Game Python - 2024",
+        "description": "This program is the classic snake game, made in python. The user controls a snake that eats food items randomly placed on the window and the game ends if the user hits a border or their own tail. It uses event-driven programming concepts and is pretty basic, but who doesn't love a classic snake game project! ",
+        "details": "This is a simple program I made over the summer in a few hours, it is one of the most basic games to create but demonstrates an understanding of tkinter python library and concepts.",
+        "url":"https://www.youtube.com/embed/rzeUH3K_L84?si=9opVXd2k5vdO8U9C",
+        "gitpage":"https://github.com/Cxdyr/SnakeGame"
+    },
+    {
+        "id": "7",
+        "title":"Intergalactic C++ Game - 2023",
+        "description": "This is a program that simulates a crew on a space-ship traveling out of our galaxy in a time-loop. You get to choose the amount of crew members in your ship, then must keep your crew healthy and happy while traversing out of the solar system. Players must navigate challenges like food and fuel shortages, crew morale, and ship damage while exploring planets in the solar system and beyond. The game features an interactive experience with random events, ASCII art, and various paths that lead to success or failure. ",
+        "details": "This was a passion program I made in C++ a few years ago while being very interesting in astronomy, it showcases a blend of object-oriented programming, random number generation, and user-driven gameplay.",
+        "url":"https://www.youtube.com/embed/icSCXwH2Has?si=ApibpyiixsqF0-GQ",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/Intergalactic"
+    },
+    {
+        "id": "8",
+        "title": "Cody Rabie Portfolio Website - current",
+        "description":"This is my personal portfolio website that you are currently browsing, it is a Flask-based web application that showcases my projects, personal information, and interactive casino games. The casino features a dice game, blackjack game, and secure admin dashboard for managing users.",
+        "details":"I created this to showcase my skills and projects in a single directory that I have full control over, It is still a work in progress as I continue my education and further my skills.",
+        "url":"https://www.youtube.com/embed/JabYOThrEpA?si=FGKYib3P4bqiIWi3",
+        "gitpage": "https://github.com/Cxdyr/CodyWebsite"
+    },
+    {
+        "id": "9",
+        "title": "Hermorrhagic Smallpox Simulator C++ - 2022",
+        "description": "Hermorrhagic Smallpox Simulator is a C++ program that is based on work from Epstein et. all (peer-reviewed article linked in github readme.md), it simulates a population and models the spread of an infectious disease through probabilistic interactions in predefined social mixing groups (families, schools, hospitals, work, etc). It allows for user-defined population sizes and dynamically tracks infection statistics over time, providing a day-by-day report of disease progression. Using random distributions that are based on Epstein's work, the program creates a realistic simulation of exposure, infection, and symptom development, offering insights into how diseases might spread in interconnected communities.  ",
+        "details": "I developed this program during my data structures and algorithms class at Old Dominion University. It utilizes basic libraries fstream, random, cmath, math.h, random, list, iostream, and ctime. It uses raw pointers for memory management and allows for time step modeled simulation with detailed population reports per time step of the probabilstic spread.",
+        "url":"https://www.youtube.com/embed/08wK5QHrnuk?si=efAnO501PbUauyZY",
+        "gitpage":"https://github.com/Cxdyr/Cool-Projects/tree/main/Hemorrhagic-Smallpox-Simulation"
+    },
+    {
+        "id": "10",
+        "title":"Web Scraper JS (Node.js) - 2025",
+        "description": "This program is a web scrapper that recursively fetches links from a given URL and stores the crawled data in a json file (urls). The program uses Node.js with key modules node-fetch for making HTTP requests, cheerio for parsing the HTML, and readline for user input of the root URL.",
+        "details": "I developed this program as a way to begin learning Node.js and JS in general. This project helped me practice fundamental programming concepts such as asynchronous operations and recursion. Additionally, it gave me hands-on experience in structuring and managing Node.js projects with dependencies.",
+        "url":"",
+        "gitpage":"https://github.com/Cxdyr/WebScraper"
+    }
+
+
+]
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Cody Rabie</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="full-gradient-bg">
+    <a href="index.html">
+        <h1>Resume</h1>
+    </a>
+    
+    <div id="email-form" class="form-container">
+        <h3>Access My Resume</h3>
+        <p>Please enter your email to view my resume</p>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="button-container">
+            <button id="submit-email">View Resume</button>
+        </div>
+    </div>
+    
+    <div id="resume-container" style="display:none;">
+        <iframe id="resume-frame" width="90%" height="800px"></iframe>
+    </div>
+    
+    <a href="index.html" class="link-box">Home</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const emailForm = document.getElementById("email-form");
+            const resumeContainer = document.getElementById("resume-container");
+            const submitButton = document.getElementById("submit-email");
+            const emailInput = document.getElementById("email");
+            
+            submitButton.addEventListener("click", function() {
+                const email = emailInput.value.trim();
+                
+                if (email && validateEmail(email)) {
+                    // Submit to Google Form
+                    submitToGoogleForm(email);
+                    
+                    // Hide form and show resume
+                    emailForm.style.display = "none";
+                    resumeContainer.style.display = "block";
+                    
+                    // Load the resume
+                    document.getElementById("resume-frame").src = "static/CodyRabie_Resume2025.pdf";
+                } else {
+                    alert("Please enter a valid email address");
+                }
+            });
+            
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            function submitToGoogleForm(email) {
+                // Create a hidden iframe to submit the form without page redirect
+                const iframe = document.createElement('iframe');
+                iframe.name = 'hidden-iframe';
+                iframe.style.display = 'none';
+                document.body.appendChild(iframe);
+                
+                // Create a form element
+                const form = document.createElement('form');
+                form.method = 'POST';
+                // Replace with your Google Form URL (get this by inspecting your Google Form)
+                form.action = 'https://docs.google.com/forms/d/e/1FAIpQLSd3_IkiYmQPWOLWFZtR2aW9K7pe86Xoc9vRqYUHEO30ElWMtg/formResponse';
+                form.target = 'hidden-iframe';
+                
+                // Create input for email
+                // Replace 'entry.123456789' with your actual form field ID
+                const emailField = document.createElement('input');
+                emailField.type = 'text';
+                emailField.name = 'entry.880907508'; // Replace with actual entry ID
+                emailField.value = email;
+                
+
+                
+                // Append inputs to form
+                form.appendChild(emailField);
+                
+                // Append form to body and submit
+                document.body.appendChild(form);
+                form.submit();
+                
+                // Clean up
+                setTimeout(() => {
+                    document.body.removeChild(form);
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="static/js/mobile-adjustments.js"></script>
+</body>
+</html>
