@@ -12,7 +12,7 @@
         "title": "Songwall Rating Webapp - 2025",
         "description": "Songwall is a web application that I created as a social media/music rating app. I integrate the spotify web api using the search endpoint to get song metadata - which is then stored in my database. Songwall allows users to to find/view songs and rate/post about them. It uses a relational database allowing easy search/rating/posting about songs and linking them to user profiles. My database stores song information, view information, rating information about each song, and uses this information to better present songs and recommendations to users. ",
         "details": "Songwall is created using Flask and SQLAlchemy for the back-end, I am the creator and full-stack developer of this app. It demonstrates my understanding of full-stack, database managment, and creating an easy-to-use user UI/UX. I also use a content/collaborative/popularity based filtering algorithim paired with user social interactions to recommend new songs to users as they use the application.  ",
-        "url": "https://www.Songwall.org",
+        "url": "https://www.youtube.com/watch?v=rCgrUHbO24g",
         "gitpage": "https://github.com/Cxdyr/SongWall"
     },
     {
